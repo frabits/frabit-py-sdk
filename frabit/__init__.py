@@ -4,8 +4,15 @@
 # This file is part of frabit-server
 #
 import os
-import sys
-import re
-import logging
 
-_logger = logging.getLogger(__name__)
+from version import get_version
+from client import Client
+
+
+api_key = os.environ.get("FRABIT_API_KEY")
+api_url = os.environ.get("FRABIT_API_URL", "https://api.frabit.tech")
+
+__all__ = [
+    "get_version",
+    "Client",
+]
