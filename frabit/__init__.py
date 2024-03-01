@@ -5,8 +5,8 @@
 #
 import os
 
-from version import get_version
-from client import Client
+from .version import get_version
+from .client import Client
 
 
 api_key = os.environ.get("FRABIT_API_KEY")
