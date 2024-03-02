@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "frabit"
-version = "2020.0.0"
+version = "2.0.19"
 dependencies = [
   "requests==2.27.1",
 ]
@@ -17,7 +17,7 @@ maintainers = [
 ]
 description = "Frabit official python sdk"
 readme = "README.md"
-license = {file = "LICENSE.txt"}
+license = {file = "LICENSE"}
 keywords = ["Database", "Platform", "Automatic"]
 classifiers = [
   "Development Status :: 4 - Beta",
