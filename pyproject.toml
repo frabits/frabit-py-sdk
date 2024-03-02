@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "frabit"
+version = "2020.0.0"
+dependencies = [
+  "requests==2.27.1",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Blylei", email = "blylei.info@gmail.com"},
+]
+maintainers = [
+  {name = "Frabit team", email = "blylei.info@gmail.com"}
+]
+description = "Frabit official python sdk"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["Database", "Platform", "Automatic"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://frabit.tech"
+Documentation = "https://frabit.tech/docs"
+Repository = "https://github.com/frabits/frabit-py-sdk.git"
+"Bug Tracker" = "https://github.com/frabits/frabit-py-sdk/issues"
+Changelog = "https://github.com/frabits/frabit-py-sdk/master/CHANGELOG.md"
