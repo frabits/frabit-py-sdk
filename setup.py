@@ -18,7 +18,7 @@ from setuptools import setup
 
 from frabit.version import get_version
 
-install_requires = open("requirements.txt").readlines()
+install_requires = "requests==2.27.1"
 
 setup(
     name="frabit",
