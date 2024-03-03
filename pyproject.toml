@@ -13,7 +13,7 @@ authors = [
   {name = "Blylei", email = "blylei.info@gmail.com"},
 ]
 maintainers = [
-  {name = "Frabit team", email = "blylei.info@gmail.com"}
+  {name = "Frabit Team", email = "blylei.info@gmail.com"}
 ]
 description = "Frabit official python sdk"
 readme = "README.md"
