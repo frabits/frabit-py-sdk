@@ -2,8 +2,7 @@
 ![Build](https://github.com/frabits/frabit-py-sdk/actions/workflows/main.yml/badge.svg) 
 ![License: MIT](https://img.shields.io/github/license/frabits/frabit-py-sdk)
 [![PyPI](https://img.shields.io/pypi/v/frabit)](https://pypi.org/project/frabit/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/frabit)](https://pypi.org/project/frabit)
----
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/frabit)](https://pypi.org/project/frabit)  
 
 # frabit-py-sdk
 Frabit official python sdk
