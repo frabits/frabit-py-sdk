@@ -10,7 +10,7 @@ from .client import Client
 
 
 api_key = os.environ.get("FRABIT_API_KEY")
-api_url = os.environ.get("FRABIT_API_URL", "https://api.frabit.tech")
+base_url = os.environ.get("FRABIT_BASE_URL", "https://api.frabit.tech")
 
 __all__ = [
     "get_version",

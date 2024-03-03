@@ -15,4 +15,8 @@
 
 
 class Client:
-    pass
+    """Communicate with frabit via RestAPI"""
+
+    def __init__(self, base_url, service_account):
+        self.base_url = base_url
+        self.service_account = service_account
