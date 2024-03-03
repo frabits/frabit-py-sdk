@@ -26,7 +26,7 @@ setup(
     description="Frabit Python SDK",
     long_description=open("README.md", encoding="utf8").read(),
     long_description_content_type="text/markdown",
-    author="frabit team",
+    author="Frabit Team",
     author_email="blylei.info@gmail.com",
     url="https://github.com/frabits/frabit-py-sdk",
     packages=["frabit"],
