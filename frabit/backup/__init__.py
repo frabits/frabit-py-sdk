@@ -13,5 +13,32 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from frabit.request import Request
+
+
 class Backup:
-    pass
+    """Access Backup asset via this endpoint"""
+    def __init__(self):
+        pass
+
+    def get_backup(self):
+        """list a backup set """
+        Request.do()
+
+    def get_backups(self):
+        pass
+
+    def get_backup_by_id(self):
+        pass
+
+    def get_backup_name(self):
+        pass
+
+    def make_backup(self):
+        pass
+
+    def delete_backup(self):
+        pass
+
+    def cancel_backup(self):
+        pass
