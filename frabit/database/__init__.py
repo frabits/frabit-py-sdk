@@ -13,23 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-class Client:
-    """Communicate with frabit via RestAPI"""
-
-    def __init__(self, base_url, token):
-        self.base_url = base_url
-        self.token = token
-
-        self._database = None
-        self._backup = None
-
-    @property
-    def database(self):
-        """
-        Access the hedera_mirror_sdk Account API
-        """
-        if self._database is None:
-            from frabit.database import Database
-            self._database = Database(self, self.base_url, 'database', self.hedera_mirror_sdk_version)
-        return self._database
+class Database:
+    pass

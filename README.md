@@ -7,8 +7,23 @@
 # frabit-py-sdk
 Frabit official python sdk
 
+## Supported Python Versions
+This SDK supports the following Python implementations:
+
+Python 3.6
+Python 3.7
+Python 3.8
+Python 3.9
+Python 3.10
 
 # Installation
+
+Install from source code
+```bash
+git clone https://github.com/frabits/frabit-py-sdk.git 
+cd frabit-py-sdk && python setup.py install
+```
+Install from PyPi
 ```bash
 pip install frabit
 ```
@@ -16,9 +31,11 @@ pip install frabit
 # Examples
 
 ```python
-
+import os
 from frabit import Client
 
-base_url = "api.frabit.tech"
-client = Client(base_url)
+base_url = os.environ.get('FRABIT_BASE_URL') or "api.frabit.tech"
+token = os.environ.get('FRABIT_TOKEN') or  ""
+client = Client(base_url,token)
+client.database.get()
 ```
