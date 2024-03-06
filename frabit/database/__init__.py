@@ -14,4 +14,17 @@
 # limitations under the License.
 
 class Database:
-    pass
+    """Operate database asset via this endpoint"""
+    def __init__(self):
+        pass
+
+    def get_database(self):
+        pass
+
+    def create_database(self):
+        pass
+
+    def drop_database(self):
+        pass
+
+
