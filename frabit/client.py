@@ -23,6 +23,7 @@ class Client:
 
         self.version = "v2"
 
+        # frabit provide below services with rest api
         self._database = None
         self._backup = None
 
