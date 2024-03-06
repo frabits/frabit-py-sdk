@@ -21,15 +21,28 @@ class Client:
         self.base_url = base_url
         self.token = token
 
+        self.version = "v2"
+
         self._database = None
         self._backup = None
 
     @property
     def database(self):
         """
-        Access the hedera_mirror_sdk Account API
+        Access the frabit database API
         """
         if self._database is None:
             from frabit.database import Database
-            self._database = Database(self, self.base_url, 'database', self.hedera_mirror_sdk_version)
+            self._database = Database(self, self.base_url, 'database', self.version)
         return self._database
+
+    @property
+    def backup(self):
+        """
+        Access the frabit backup API
+        """
+        if self._backup is None:
+            from frabit.backup import Backup
+            self._backup = Backup(self, self.base_url, 'backup', self.version)
+        return self._backup
+
